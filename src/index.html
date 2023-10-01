@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <!-- Button components -->
+    <section class="flex flex-col gap-3 p-5">
+      <!-- Create account button -->
+      <button
+        class="text-neutral-1000 font-px-regular font-bold leading-normal w-[334px] py-2 px-6 flex justify-center items-center gap-[10px] rounded-full bg-neutral-50 hover:bg-neutral-200 disabled:bg-neutral-500"
+      >
+        <div class="">Create account</div>
+      </button>
+
+      <!-- Follow button -->
+      <button
+        class="text-neutral-1000 font-px-regular font-bold text-[14px] leading-normal py-2 px-5 w-fit inline-flex justify-center items-center gap-[10px] rounded-full bg-neutral-50 hover:bg-neutral-200 disabled:bg-neutral-500"
+      >
+        <div class="">Follow</div>
+      </button>
+
+      <!-- Next button -->
+      <button
+        class="text-neutral-1000 font-px-regular font-bold leading-normal w-[442px] py-3 px-6 inline-flex justify-center items-center gap-[10px] rounded-full bg-neutral-50 hover:bg-neutral-200 disabled:bg-neutral-500"
+      >
+        <div class="">Next</div>
+      </button>
+
+      <!-- Post button 1 -->
+      <button
+        class="text-neutral-50 font-px-regular font-bold leading-normal w-[334px] py-[15px] px-[93px] flex justify-center items-center gap-[10px] rounded-full bg-twitter-blue hover:bg-twtr-blue-hover disabled:bg-twtr-blue-disabled disabled:text-neutral-400"
+      >
+        <div class="">Post</div>
+      </button>
+
+      <!-- Post button 2 -->
+      <button
+        class="text-neutral-50 font-px-regular font-bold text-base leading-normal py-3 px-6 w-fit inline-flex justify-center items-center gap-[10px] rounded-full bg-twitter-blue hover:bg-twtr-blue-hover disabled:bg-twtr-blue-disabled disabled:text-neutral-400"
+      >
+        <div class="">Post</div>
+      </button>
+
+      <!-- Post button 3 -->
+      <button
+        class="text-twitter-white-100 font-px-regular font-bold leading-normal w-[442px] p-5 flex justify-center items-center gap-[10px] rounded-full bg-twitter-blue hover:bg-twtr-blue-hover disabled:bg-twtr-blue-disabled disabled:text-neutral-400"
+      >
+        <div class="">Post</div>
+      </button>
+    </section>
+
+    <!-- Frame -->
+    <section class="flex flex-col gap-3 p-5">
+      <div
+        class="flex w-[598px] h-[58px] pt-5 px-20 pb-0 justify-center items-center gap-40 shrink-0 border-solid border-b border-neutral-700"
+      >
+        <a
+          href="#"
+          class="text-neutral-400 flex flex-col justify-center items-center gap-4"
+        >
+          <div class="w-14 h-[19px]">For you</div>
+          <div class="h-[3px] w-14 bg-twitter-blue"></div>
+        </a>
+        <a
+          href="#"
+          class="text-neutral-50 flex flex-col justify-center items-center gap-3"
+        >
+          <div class="h-[19px]">Following</div>
+          <div class=""></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Icon -->
+    <section class="flex flex-col gap-3 p-5">
+      <img
+        class="h-6 w-6"
+        src="../public/images/state-not-selected.svg"
+        alt="home-button-not-selected"
+      />
+      <img
+        class="h-6 w-6"
+        src="../public/images/state-selected1.svg"
+        alt="home-button-selected"
+      />
+      <img
+        class="h-4 w-4"
+        src="../public/images/group.svg"
+        alt="group-icon-not-selected"
+      />
+      <img
+        class="h-6 w-6"
+        src="../public/images/state-selected.svg"
+        alt="group-icon-selected"
+      />
+    </section>
+
+    <!-- Input elements -->
+    <section class="flex flex-col gap-3 p-5">
+      <!-- Default input -->
+      <div class="relative my-4">
+        <span
+          class="text-neutral-500 focus:text-twitter-blue text-xs absolute top-[-7px] left-3 px-1 bg-black w-[51.018px] text-center"
+          >Label</span
+        >
+        <input
+          class="bg-transparent text-neutral-500 text-xl border rounded py-4 px-3 w-[426px] outline-none focus:border-twitter-blue focus:text-neutral-50"
+          placeholder="label"
+          type="text"
+        />
+      </div>
+
+      <!-- Selected input-->
+      <div class="relative w-fit mb-4">
+        <span
+          class="text-twitter-blue text-xs absolute top-[-7px] left-3 px-1 bg-black w-[51.018px] text-center"
+          >Label</span
+        >
+        <input
+          class="bg-transparent text-xl border rounded py-4 px-3 w-[426px] outline-none border-twitter-blue text-neutral-50"
+          placeholder="label"
+          type="text"
+          value="value"
+        />
+        <img
+          class="absolute right-4 bottom-5"
+          src="../public/images/icon.svg"
+          alt="right-icon"
+        />
+      </div>
+
+      <!-- Post input -->
+      <div class="w-[482px] flex gap-3">
+        <img src="../public/images/user-avatar1.png" alt="user-avatar" />
+        <input
+          class="bg-transparent text-neutral-600 focus:text-neutral-50 outline-none caret-twitter-blue leading-9"
+          type="text"
+          placeholder="What's happening?!"
+        />
+      </div>
+    </section>
+
+    <!-- Search element -->
+    <section class="flex flex-col gap-3 p-5">
+      <!-- Default -->
+      <div
+        class="flex w-[348px] 39px py-[10px] pr-[247px] pl-4 items-center gap-[15px] shrink-0 rounded-full bg-searchbar-fill border border-transparent"
+      >
+        <img
+          class="w-[19px] h-[19px]"
+          src="../public/images/dark-theme-search-group.svg"
+          alt="magnifying-glass-icon"
+        />
+        <input
+          type="text"
+          placeholder="Search"
+          class="bg-transparent text-neutral-50 placeholder-neutral-600 outline-none"
+        />
+      </div>
+
+      <!-- Selected -->
+      <div
+        class="flex w-[348px] 39px py-[10px] pr-[247px] pl-4 items-center gap-[15px] shrink-0 rounded-full bg-searchbar-fill border border-twitter-blue"
+      >
+        <img
+          class="w-[19px] h-[19px]"
+          src="../public/images/dark-theme-search-group1.svg"
+          alt="magnifying-glass-icon"
+        />
+        <input
+          value="Search"
+          type="text"
+          placeholder="Search"
+          class="bg-transparent placeholder-neutral-600 text-neutral-50 outline-none"
+        />
+      </div>
+    </section>
+
+    <!-- Card components -->
+    <section class="flex flex-col gap-3 p-5 bg-[#40596A]">
+      <!-- Input tweet -->
+      <div
+        class="w-[482px] h-[355px] py-[10px] px-[15px] inline-flex flex-col justify-between items-center shrink-0 rounded-2xl bg-neutral-1000"
+      ></div>
+
+      <!-- Signup -->
+      <div
+        class="py-[10px] px-[15px] inline-flex flex-col justify-between items-start gap-4 rounded-2xl bg-neutral-1000 w-[482px]"
+      >
+        <div class="flex py-3 px-4 items-center gap-5">
+          <img
+            class="w-6 h-6 cursor-pointer"
+            src="../public/images/signup-x.svg"
+            alt="close-button"
+          />
+          <h2 class="text-[15px] font-bold leading-normal text-neutral-50">
+            Header
+          </h2>
+        </div>
+        <div
+          class="flex w-[100%] h-[143px] gap-[10px] pt-20 px-5 pb-5 flex-col self-stretch"
+        ></div>
+      </div>
+
+      <!-- Signup 2 -->
+      <div
+        class="py-[10px] px-[15px] inline-flex flex-col justify-between items-start gap-4 rounded-2xl bg-neutral-1000 w-[482px]"
+      >
+        <div class="flex py-3 px-4 items-center gap-5">
+          <img
+            class="w-6 h-6 cursor-pointer"
+            src="../public/images/signup-x.svg"
+            alt="close-button"
+          />
+        </div>
+        <div
+          class="flex w-[100%] h-[143px] gap-[10px] pt-20 px-5 pb-5 flex-col self-stretch"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Tweet component -->
+    <section class="flex flex-col gap-3 p-5">
+      <div
+        class="w-[598px] py-2 px-4 flex items-start gap-4 border border-b-neutral-700"
+      >
+        <img src="../public/images/user-avatar.png" alt="user-avatar" />
+        <div>
+          <div class="flex items-center gap-2 self-stretch">
+            <span class="text-neutral-50 font-medium">Name</span>
+            <span class="text-neutral-500 font-normal">@handle • 10h</span>
+          </div>
+          <div class="text-neutral-50">
+            Writing gets easier after the first sentence. <br />
+            <br />
+            Lifting gets easier after the first set. <br />
+            <br />
+            People think and think and think until they finally decide to act.
+            Their attention shifts from internal to external, and the difficulty
+            they created in their mind vanishes.
+          </div>
+          <div
+            class="flex justify-between py-3 self-stretch items-center text-neutral-500"
+          >
+            <div class="flex gap-[5px] items-center justify-center">
+              <img src="../public/images/comment.svg" alt="comments-icon" />
+              <span>11</span>
+            </div>
+            <div class="flex gap-[5px] items-center justify-center">
+              <img src="../public/images/group-26840.svg" alt="comments-icon" />
+              <span>270</span>
+            </div>
+            <div class="flex gap-[5px] items-center justify-center">
+              <img src="../public/images/heart.svg" alt="comments-icon" />
+              <span>1869</span>
+            </div>
+            <div class="flex gap-[5px] items-center justify-center">
+              <div class="flex items-end gap-[1.714px]">
+                <div class="bg-neutral-500 w-[1.714px] h-[9.143px]"></div>
+                <div class="bg-neutral-500 w-[1.714px] h-[14.857px]"></div>
+                <div class="bg-neutral-500 w-[1.714px] h-[6.857px]"></div>
+                <div class="bg-neutral-500 w-[1.714px] h-[11.429px]"></div>
+              </div>
+              <span>99.6K</span>
+            </div>
+            <img src="../public/images/vector.svg" alt="vector-icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
